@@ -1,0 +1,689 @@
+
+/*-----------------------------------------------------------------------------
+- TABS
+-----------------------------------------------------------------------------*/
+
+//Bootstrap Tabs
+/* Vertical */
+
+.tabs-vertical {
+    border: 1px solid #F3F3F3;
+	display: table;
+    padding: 0;
+    width: 100%;
+	min-height: 300px;
+    
+    .tab-content {
+        display: table-cell;
+        vertical-align: top;
+        h1 {
+            color: $color-light;
+            font-family: 'Verdana';
+            letter-spacing: -0.02px;
+            margin-bottom: 16px;
+            margin-top: 0;
+        }
+    }
+    .nav-tabs {
+        display: table-cell;
+		border-bottom: none;
+		float: none;
+        height: 100%;
+        padding: 0;
+        vertical-align: top;
+		width: auto;
+        
+        & > li {
+            display: block;
+            float: none;
+			margin-bottom: 0;
+            margin-left: -1px;
+			margin-right: -1px;
+            width: 238px;
+	
+		
+            @media (max-width: 480px) {
+                width: 120px;
+            }
+            
+            a {
+                display: block;
+                border: none;
+                border-bottom: 1px solid $color57;
+                font: 14px/58px "Roboto Condensed";
+				height: 55px;
+				letter-spacing: 0.5px;
+				padding: 0 25px;
+				width: 100%;
+				word-spacing: 3.8px;
+                &,
+                &:hover,
+                &:focus {
+                    border-radius: 0px;
+                }
+            }
+			
+			&.active > a {
+				&,
+                &:hover,
+                &:focus {
+                    border-top: none;
+					border-bottom: 1px solid $color57;
+                }
+			}
+        }
+    }
+}
+
+/* Horizontal */
+
+.tabs-Horizontal {
+    border: 1px solid #F3F3F3;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+
+    .nav-tabs {
+		& > li {
+            display: block;
+			margin-left: -1px;
+            
+            a {
+                display:block;
+                font-family: $font-secondary;
+                font-size: 14px;
+                height: 100%;
+                letter-spacing: 1.2px;
+                padding: 20px 25px;
+                word-spacing: 1.4px;
+                line-height: 1;
+                border: 1px solid #f3f3f3;
+                width: 100%;
+                height: 56px;
+				&,
+                &:hover,
+                &:focus {
+                    border-radius: 0px;
+                }
+            }
+        }
+    }
+}
+
+.tabs-left {
+    .nav-tabs {
+		border-right: 1px solid #f3f3f3;
+        .shop.type1 & {
+            width: 20.5125282%;
+        }
+        .shopping-cart & {
+            width: 35.06493506493506%;
+        }
+        >li {
+			&.active a,
+            a:hover,
+            a:focus {
+				border-left: 1px solid $color28;
+                border-right: none;
+                color: $color28;
+            }
+        }
+    }    
+    .tab-content {
+        padding-bottom: 23px;
+        .shop.type1 & {
+            width: 79.487179%;
+            > div {
+                padding: 30px 40px;
+            }
+            .explanation {
+                i {
+                    color: #0eaefb;
+                }
+            }
+        }
+        .shopping-cart & {
+            width: 64.93506493506494%;
+            > div {
+                @include clearfix;
+                padding: 20px 30px 10px 30px;
+            }
+        }
+    }
+    .tab-pane {
+        .comments-header {
+            h3 {
+                color: $color45;
+                font: normal 19px $font-secondary;
+                letter-spacing: 1.4px;
+                margin-bottom: 28px;
+                margin-top: 8px;
+                word-spacing: 1.1px;
+                span.comment-title {
+                    color: $color46;
+                    letter-spacing: 2.4px;
+                    padding-right: 2px;
+                }
+            }
+            .pull-right {
+                margin-right: 2px;
+                span {
+                    color: $color44;
+                    display: block;
+                    padding-top: 7px;
+                    padding-right: 8px;
+                }
+            }
+        }
+        
+        .form-row {
+            padding: 3px 0 7px;
+            .title {
+                color: $color-light;
+                display: block;
+                float: left;
+                font: 14px/43px $font-tertiary;
+                width: 27.27272727272727%;
+            }
+            .content {
+                display: block;
+                float: left;
+                width: 72.72727272727273%;
+                input[type="text"] {
+                    @include calc(width,"93.75% - 130px");
+                    border-color: $pagination_item_border_color;
+                    border-radius: 0px;
+                    box-shadow: none;
+                    color: $pagination_item_color;
+                    float: left;
+                    height: 43px;
+                    margin-right: 6.25%;
+                    padding: 0 6.25%;
+                }
+                input[type="submit"] {
+                    float: left;
+                    font-weight: bold;
+                    height: 43px;
+                    padding: 0px;
+                    width: 130px;
+                    letter-spacing: 1.2px;
+                }
+                .bootstrap-select {
+                    height: auto;
+                    button {
+                        padding-bottom: 9px;
+                        padding-top: 10px;
+                    }
+                    span {
+                        font: 15px $font-primary;
+                    }
+                }
+            }
+        }
+        .reviews .review {
+            margin-bottom: 15px;
+            margin-left: 2px;
+            @include clearfix;
+            .image,
+            .image-comment {
+                color: $color3;
+                float: left;
+                margin-bottom: 22px;
+            }
+            .image {
+                padding: 14px 0;
+                width: 70px;
+                img {
+                    border-radius: 50%;
+                }
+            }
+            .image-comment {
+                margin-left: 16px;
+                margin-top: 4px;
+                letter-spacing: -0.7px;
+                line-height: 22px;
+                @include calc(width, "100% - 100px");
+                p {
+                    color: $color3;
+                    font: normal 14px $font-tertiary;
+                    letter-spacing: 0.7px;
+                    line-height: 23px;
+                    margin: 8px 2px;
+                    word-spacing: 0.6px;
+                    &+span {
+                        display: block;
+                        letter-spacing: 0.1px;
+                        padding-left: 4px;
+                        word-spacing: -1.5px;
+                    }
+                }
+                
+                span.review-title {
+                    color: $color-dark;
+                    font-size: 18px;
+                    letter-spacing: 0.1px;
+                    word-spacing: -1.6px;
+                }
+                span {
+                    color: #c2c1c1;
+                    font-family: "Arial";
+                    font-size: 14px;
+                    
+                }
+                .pull-right {
+                    margin-right: -3px;
+                    margin-top: -2px;
+                }
+            }
+        }
+        .review-customer {
+            letter-spacing: 2px;
+            margin-top: 23px;
+            margin-bottom: 17px;
+            h3 {
+                color: $color46;
+                letter-spacing: 2px;
+                margin-bottom: 31px;
+                margin-top: 0;
+            }
+            .rating {
+                color: $color58;
+                letter-spacing: -0.5px;
+                margin-left: 1px;
+                .star-rating {
+                    letter-spacing: 5px;
+                }
+            }
+            #reviewForm {
+                margin-left: 2px;
+                margin-right: 2px;
+                input[type="submit"] {
+                    font: bold 13.01px $font-secondary;
+                    letter-spacing: 1.2px;
+                    padding: 0 18px;
+                    &:not(:hover) {
+                        border: solid 1px $color6;
+                        color: $color6;
+                    }
+                
+                }
+                .row .form-control {
+                    color: $color58;
+                    @include placeholder {
+                        color: $color58;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.tabs-top {
+    .nav-tabs {
+        float: none;
+        border-top: none;
+		border-bottom: 1px solid #f3f3f3;
+		
+        >li {
+			margin-bottom: -1px;
+			margin-top: -1px;
+			
+            &.active a,
+            a:hover,
+            a:focus {
+                border-bottom: none;
+                border-top: 1px solid $color28;
+                color: $color28;
+            }
+        }
+    }    
+}
+
+.tabs-bottom {
+    .nav-tabs {
+        float: none;
+        border-top: 1px solid #f3f3f3;
+		border-bottom: none;
+		
+        >li {
+			margin-top: -1px;
+            &.active a,
+            a:hover,
+            a:focus {
+                border-top: none;
+                border-bottom: 1px solid $color28;
+                color: $color28;
+            }
+        }
+    }    
+}
+
+.tabs-right {
+    .nav-tabs {
+		border-left: 1px solid #f3f3f3;
+        
+        >li {
+            &.active a,
+            a:hover,
+            a:focus {
+                border-left: none;
+                border-right: 1px solid $color28;
+                color: $color28;
+            }
+        }
+    }    
+}
+
+.tabs-default {
+    >div {
+		padding: 20px;
+        p {
+            color: $color3; 
+        }
+    }
+}
+
+//=============== Responsive Tabs =================
+
+/* Vertical */
+
+.resp-vtabs {
+	border: 1px solid $color-header-top-border;
+	min-height: 300px;
+	padding: 0;
+    @include clearfix;
+	.resp-tabs-container {
+        border-radius: 0;
+        border: none;
+		border-left: 1px solid $color-header-top-border !important;
+		margin-left: -1px;
+		min-height: 300px;
+        h1 {
+            color: $color-light;
+            font-family: 'Verdana';
+            letter-spacing: -0.02px;
+            margin-bottom: 16px;
+            margin-top: 0;
+        }
+        .tab-pane {
+            @include clearfix;
+        }
+    }
+	.resp-tab-content {
+		border: none;
+	}
+    .resp-tabs-list {
+        border-radius: 0;
+		border: solid 1px $color-header-top-border;
+		border-top: none;
+		border-bottom: none;
+
+		height: 100%;
+        margin: -1px 0 -1px -1px !important;
+        li {
+            background-color: white !important;
+            border: solid 1px $color-header-top-border !important;
+            padding: 0 !important;
+            margin: 0 -1px -1px -1px !important;
+			
+			&:hover,
+			&:focus,
+            &:active {
+                background: transparent;
+                border-left: solid 1px $color28;
+                border-right: solid 1px white;
+                color: $color28;
+            }
+			
+			&:hover,
+			&:focus,
+			&:active {
+				a {
+					background: transparent;
+				}
+			}
+			
+			a {
+				background: transparent;
+				display: block;
+				font: 14px/59px $font-secondary;
+				letter-spacing: 0.8px;
+				padding: 0 25px;
+				width: 100%;
+				word-spacing: 1.4px;
+				
+			}
+			
+			a:hover,
+			a:focus,
+			a:active {
+				color: $color28;
+				background: transparent;
+			}
+			
+        }
+        
+		li.resp-tab-active {
+			background: transparent;
+			border-left: solid 1px $color28 !important;
+			border-right: solid 1px white !important;
+			a {
+				color: $color28;
+			}
+        }
+    }
+    .resp-tab-content {
+        padding: 21px 29px;
+        .explanation {
+            i {
+                color: #0eaefb;
+            }
+        }
+    }
+//==============================================================
+    
+}
+
+@media (max-width: 767px) {
+    .resp-vtabs {
+		min-height: 0 ;
+        .resp-arrow {
+            margin-top: 22px;
+        }
+        .resp-tabs-container {
+            min-height: 1px !important;
+            width: 100% !important;
+        }
+        .resp-tab-content {
+            padding: 32px 50px;
+        }
+        h2.resp-accordion {
+            background-color: $color40;
+            display: block;
+            font: 14px $font-secondary;
+            height: 56px;
+            letter-spacing: 1.2px;
+            line-height: 56px;
+            padding: 0 25px;
+            width: 100%;
+            word-spacing: 1.4px;
+            &:hover,
+            &:active {
+                background: transparent;
+            }
+        }
+        h2.resp-tab-active {
+            border-color: $color20 !important;
+            padding: 0 25px !important;
+        }
+        .tab-pane {
+            #quote_form {
+                margin-top: -10px;
+            }
+            .form-row {
+                padding: 10px 0;
+            }
+            .title,
+            .content {
+                float: none;
+                padding: 0;
+                width: 100%;
+                input[type="text"]{
+                    float: none;
+                    width: 100%;
+                }
+                input[type="submit"] {
+                    display: block;
+                    float: none;
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}
+
+//Horizontal Tabs
+.resp-htabs {
+    border: 1px solid $color-header-top-border;
+    padding: 0;
+    @include clearfix;
+	.resp-tabs-container {
+        border-radius: 0;
+        border: none;
+        h1 {
+            color: $color-light;
+            font-family: 'Verdana';
+            letter-spacing: -0.02px;
+            margin-bottom: 16px;
+            margin-top: 0;
+        }
+        .tab-pane {
+            @include clearfix;
+        }
+    }
+	.resp-tab-content {
+		border: none;
+	}
+    .resp-tabs-list {
+        border-radius: 0;
+        margin: -1px -1px 0 -1px !important;
+		border: solid 1px $color-header-top-border;
+		border-left: none;
+        li {
+            background-color: white !important;
+            border: solid 1px $color-header-top-border !important;
+            padding: 0 !important;
+            margin: -1px -1px -1px 0 !important;
+			
+			&:hover,
+			&:focus,
+            &:active {
+                background: transparent;
+                border-top: solid 1px $color28;
+                border-bottom: solid 1px white;
+                color: $color28;
+            }
+			
+			&:hover,
+			&:focus,
+			&:active {
+				a {
+					background: transparent;
+				}
+			}
+			
+			a {
+				background: transparent;
+				display: block;
+				font: 14px/59px $font-secondary;
+				letter-spacing: 0.8px;
+				padding: 0 25px;
+				width: 100%;
+				word-spacing: 1.4px;
+				
+			}
+			
+			a:hover,
+			a:focus,
+			a:active {
+				color: $color28;
+				background: transparent;
+			}
+			
+        }
+        
+		li.resp-tab-active {
+			background: transparent;
+			border-top: solid 1px $color28 !important;
+			border-bottom: solid 1px white !important;
+			a {
+				color: $color28;
+			}
+        }
+    }
+    .resp-tab-content {
+        padding: 21px 29px;
+        .explanation {
+            i {
+                color: #0eaefb;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .resp-htabs {
+        .resp-arrow {
+            margin-top: 22px;
+        }
+        .resp-tabs-container {
+            min-height: 1px !important;
+            width: 100% !important;
+        }
+        .resp-tab-content {
+            padding: 32px 50px;
+        }
+        h2.resp-accordion {
+            background-color: $color40;
+            display: block;
+            font: 14px $font-secondary;
+            height: 56px;
+            letter-spacing: 1.2px;
+            line-height: 56px;
+            padding: 0 25px;
+            width: 100%;
+            word-spacing: 1.4px;
+            &:hover,
+            &:active {
+                background: transparent;
+            }
+        }
+        h2.resp-tab-active {
+            border-color: $color20 !important;
+            padding: 0 25px !important;
+        }
+        .tab-pane {
+            #quote_form {
+                margin-top: -10px;
+            }
+            .form-row {
+                padding: 10px 0;
+            }
+            .title,
+            .content {
+                float: none;
+                padding: 0;
+                width: 100%;
+                input[type="text"]{
+                    float: none;
+                    width: 100%;
+                }
+                input[type="submit"] {
+                    display: block;
+                    float: none;
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}

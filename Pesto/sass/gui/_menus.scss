@@ -1,0 +1,13 @@
+.filter-container:hover {
+	.over-menu {
+		display: block;
+	}
+}
+
+.over-menu {
+	background-color: white;
+	display: none;
+	position: absolute;
+	right: -15px;
+	top: 0;
+}

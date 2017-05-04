@@ -1,0 +1,50 @@
+
+/*-----------------------------------------------------------------------------
+- SLIDERS
+-----------------------------------------------------------------------------*/
+
+
+.slider-range,
+.slider-default,
+.slider-range-max,
+.slider-range-min {
+    border: none;
+	background-color: transparent;
+	height: 13px; 
+            
+    .ui-slider-handle {
+		border: none;
+        height: 13px !important;
+		margin-left: -4px;
+        top: 0px !important;
+        width: 9px !important;
+		background: none;
+        background-color: $color-dark !important;
+		border-radius: 0;
+		
+		&.ui-state-focus {
+			background-color: #333 !important;
+		}
+    }
+
+    .ui-total-slider-range {       
+        background-color: #eaeaea;
+        height: 1px;
+		width: 100%;
+		position: absolute;
+		top: 6px;
+    }
+	
+	.ui-slider-range {  
+		background: none;
+        background-color: $color-normal;
+        height: 1px;
+		top: 6px;
+    }
+}
+
+
+
+.price-amount {
+    width: 37%;
+}

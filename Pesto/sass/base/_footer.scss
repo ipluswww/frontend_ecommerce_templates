@@ -1,0 +1,503 @@
+// ==========================================================
+// footer layout and background color
+// ==========================================================
+.footer-main {
+    color: #a8a8a8;
+    font-size: 14px;
+    .footer-nologo & {
+        h4 {
+            letter-spacing: 0.5px;
+        }
+        .foot-account,
+        .foot-info,
+        .foot-service,
+        .support {
+            ul li {
+                a {
+                    letter-spacing: 0.45px;
+                }
+            }
+        }
+        .foot-support {
+            ul li {
+                margin: 2px 0 1px;
+            }
+        }
+    }
+}
+.footer-center {
+    padding-top: 91px;
+    padding-bottom: 48px;
+
+}
+
+.footer-nologo {
+    background-color: #4c4944;
+    padding-top: 69px;
+    padding-bottom: 4px;
+    margin-top: 110px;
+}
+
+// ==========================================================
+// setting footer head
+// ==========================================================
+
+.footer-center {
+    h4 {
+        color: #dbdbdb;
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 1.2px;
+        margin: 28px 0 20px;
+    }
+    .support h4 {
+        margin-bottom: 23px;
+    }
+}
+.footer-nologo h4 {
+    color: #dbdbdb;
+    font-family: $font-primary;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    margin: 25px 0;
+}
+
+.join {
+    margin-top: 75px;
+}
+
+.footer-join h3 {
+    color: #dbdbdb;
+    font-family: $font-secondary;
+    font-size: 21px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    margin-top: 18px;
+}
+
+
+#footer ul {
+    padding-left: 0;
+}
+
+.footer-center li {
+    padding: 8px 0;
+}
+
+.footer-nologo li {
+    margin: 11px 0;
+}
+
+.footer-center li {
+    &,a {
+        font-size: 11px;
+    }
+}
+
+.footer-nologo li{
+    &,a {
+        font-size: 14px;            
+    }
+}
+
+.footer-center .row {
+    margin: 0 -35px;
+}
+
+.footer-nologo .row {
+    margin: 0 -15px;
+}
+
+.footer-nologo .col-md-3 {
+    padding: 0 -14px;
+}                  
+
+li.foot-phone {
+    color: #eeeeee;
+    font-size: 20px;
+    letter-spacing: -0.8px;
+    margin-top:-4px;
+    word-spacing: 1.5px;
+    .footer-center & {
+        margin-top: 0;
+        padding: 1px 0;
+    }
+}
+
+li.foot-service-hours {
+    margin-top: 5px;
+    font: normal 14px $font-primary; 
+    letter-spacing: 0.4px;   
+    .footer-center & {
+        margin-top: 0;
+        padding: 2px 0;
+    }
+}
+
+// ============================================================
+// Follow Us
+// ============================================================
+.follow {
+    .footer-nologo & {
+        padding-top: 1px;
+    }
+    .footer-center & {
+        h4 {
+            margin-bottom: 16px;
+            margin-top: 43px;
+        }
+    }
+}
+.footer-follow{
+    h4 {
+        margin-top: 45px;
+        margin-bottom: 25px;
+    }
+    li {
+        list-style: none;
+	    margin-top: 2px;
+        margin-right: 7px; 
+        a {
+            background-color: #5e5d57;
+            display: block;
+            font-size: 17px;
+            text-align: center;
+            i {
+                color: $color67;
+                line-height: 30px;
+            }
+        }
+        &,a {
+            color: #c1c1c1;
+            letter-spacing: normal;
+        }
+    }
+    .footer-nologo & {
+        padding-top: 11px;
+    }
+}
+.footer-center .footer-logo {
+    margin-top: 84px;
+    margin-bottom: 16px;
+}
+
+#emailForm .input-group {
+    
+    background-color: #4c4944;
+    margin: 26px auto 18px auto;
+    width: 501px;
+    input {
+        background-color: #4c4944;
+        border: 1px solid #676460;
+        border-right-color: #4c4944;
+        border-radius: 0;
+        color: #a5a5a5;
+        font-family: $font-primary;
+        font-size: 16px;
+        height: 45px;
+        padding: 0 20px;
+        @include calc(width,"100% - 45px");
+    }
+    button.btn:not(:hover) {
+        background-color: #4c4944;
+        border: 1px solid #676460;
+        border-left-color: #4c4944;
+        display: block;
+        float: left;
+        margin-left: -1px;
+        i {
+            color: #706d69;
+        }
+    }
+}
+.footer-center .container-fluid p{
+    margin: 0 auto;
+    width: 403px;
+}
+
+.footer-nologo .container-fluid {
+    margin-top: 74px;    
+}
+
+.footer-join {
+    text-align: center;
+}
+
+.footer-nologo .footer-links,
+.footer-center .footer-links {
+    text-align: center;
+    ul {
+        padding:0;
+        display: inline-block;
+        li {
+            float: left;
+            list-style: none;
+            a {
+                border-left: 2px solid #7e7d7b;
+                color: $color68;
+                display: block;
+                font-family: $font-primary;
+                font-size: 14px;
+                letter-spacing: 0.6px;
+                line-height: 13px;
+                padding: 0 21px;
+            }
+        }
+        
+        li:first-child {
+            a {
+                border: 0;
+            }
+            
+        }
+    }
+}
+.footer-mobile {
+    .footer-mobile-links {
+        li{
+            border-top: solid 1px $color-input-border;
+            margin: 0;
+            a {
+                color: $color-light;
+                display: block;
+                font: 16px $font-primary;
+                padding: 12px 0;
+            }
+        }
+    }
+}
+@media (min-width: 768px) {
+    .footer-center {
+        background-color: #4c4944;
+    }
+    .footer-center .footer-mobile {
+        display: none;
+    }
+}
+@media (max-width: 991px) {
+    #footer {
+        h4 {
+            font-size: 13px;
+        }
+    }
+    .foot-phone {
+        font-size: 18px;
+    }
+    .foot-service-hours {
+        display: none;
+    }
+    .join {
+        margin-top: 34px;
+    }
+    .footer-join h3 {
+        margin-top: 27px;
+    }
+    .footer-nologo {
+        padding-top: 44px;
+        .footer-main{
+            .foot-support {
+                padding-top: 7px;
+            }
+        }
+        .support {
+            h4 {
+                margin-bottom: 19px;
+            }
+        }
+        
+        .footer-follow {
+            padding-top: 1px;
+            li {
+                margin-bottom: 5px;
+            }
+        }
+    }
+    .footer-nologo .footer-links,
+    .footer-center .footer-links {
+        margin-bottom: 20px;
+        ul {
+            width: 648px;
+            li {
+                float: none;
+                display: inline-block;
+                margin-bottom: 0px;
+                a {
+                    padding: 0 12px;
+                }
+                .free {
+                    border: none;
+                }
+                &.next-inline {
+                    margin-top: 2px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 767px) {
+    .footer-center {
+        padding: 44px 0 4px;
+        li a {
+            font-size: 14px;
+        }
+    }
+    .footer-nologo,
+    .footer-center {
+        background-color: #4c4944;
+        .join {
+            background-color: $color43;
+            margin-top: 55px;
+        }
+        .footer-main {
+            h4 {
+                letter-spacing: 1.5px;
+                margin-bottom: 25px;
+            }
+            .foot-support {
+                padding-top: 2px;
+                ul li {
+                    margin: 10px 0;
+                }
+            }
+            .support h4 {
+                margin-bottom: 17px;
+            }
+        }
+        .footer-join {
+            padding-top: 11px;
+            h3 {
+                letter-spacing: 1px;
+                margin-top: 26px;
+            }
+            text-align: left;
+            #emailForm {
+                margin-top: -8px;
+                .input-group {
+                    background-color: $color43;
+                    margin-left: 0;
+                    margin-right: 0;
+                    width: 100%;
+                    button.btn {
+                        background-color: $color43;
+                    }
+                    input {
+                        background-color: $color43;
+                        @include calc(width,"100% - 45px");
+                    }
+                }
+            }
+        }
+        .footer-links {
+            padding-top: 3px;
+            ul {
+                text-align: left;
+                li,
+                li.next-inline {
+                    margin-top: 11px;
+                    a {
+                        border: none;
+                        padding: 3px 0;
+                    }
+                    display: block;
+                }
+            }
+        }
+        .foot-info,
+        .foot-service,
+        .foot-account {
+            padding-bottom: 18px;
+        }
+        .foot-service-hours {
+            display: block;
+        }
+        .footer-follow {
+            padding-top: 11px;
+        }
+        .foot-phone {
+            font-size: 20px;
+            line-height: 1;
+        }
+    }
+}
+
+.footer3 {
+	border-top: 1px solid #f4f4f4;
+	height: 95px;
+    line-height: 95px;
+	margin: 50px 0 0 0;
+	
+	p {
+		margin: 0;
+		padding: 0;
+	}
+	
+	a,
+	p {
+		font-family: $font-primary;
+		font-size: 14px;
+		color: #929292;
+	}
+	
+	ul {
+		margin: 0;
+		
+		li,
+		li a {
+			padding: 0;
+		}
+		
+		li {
+			margin-right: 40px;
+			
+			a {
+				letter-spacing: 0.5px;
+				word-spacing: 0;
+			}
+		}
+	}
+	
+	.phone-number {
+		padding-top: 3px;
+		
+		p {
+			letter-spacing: -0.2px;
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	.footer3 {
+		margin: 131px 0 0 270px;
+		
+		p {
+			letter-spacing: -.2px;
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	.footer3 {
+		.phone-number {
+			float: left !important;
+			line-height: 63px;
+			letter-spacing: .7px;
+		}
+		.pull-left {
+			float: none !important;
+			
+			ul {
+				display: block;
+				
+				li {
+					border-top: 1px solid $color-input-border;
+					border-bottom: 1px solid $color-input-border;
+					line-height:45px;
+					height: 47px;
+					margin-top: -1px;
+					display: block;
+				}
+			}
+		}
+	}
+}

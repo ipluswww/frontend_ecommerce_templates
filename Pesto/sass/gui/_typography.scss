@@ -1,0 +1,178 @@
+.explanation {
+    color: $color-dark;
+    padding: 10px 0;
+    p {
+        font: 15px 'Arial';
+        letter-spacing: 0.15px;
+        line-height: 23px;
+        margin-bottom: 15px;
+    }
+    .title {
+        font: 28px $font-primary;
+    }
+}
+.fans {
+    color: $color33;
+    font: 15px $font-secondary;
+}
+.quote {
+    @include clearfix;
+    .explonation.type1 & {
+        margin-bottom: 6px;
+    }
+    span {
+        float: left;
+        font-size: 22px;
+        height: 32px;
+        line-height: 32px;
+        width: 32px;
+    }
+    p {
+        @include calc(width,'100% - 32px');
+        float: left;
+        .type1 & {
+            padding: 8px 5px;
+        }
+        .type2 & {
+            margin-bottom: 13px;
+            padding: 9px 5px;
+        }
+    }
+}
+.post-date,.date {
+    span {
+        color: #dadada;
+        font-family: $font-tertiary;
+    }
+    .day {
+        font-size: 27px;
+    }
+    .month,.divider,.comment-length {
+        font-size: 13px;
+    }
+}
+.category {
+    color: #dadada;
+    font-family: $font-tertiary;
+    font-size: 14px;
+    &.large {
+        font-size: 15px;
+    }
+}
+
+highlight {
+    padding: 0 0.3em;
+    background: #dcdcdc;
+}
+
+.highlight.reverse {
+    color: #fff;
+    background: #7c807e;
+}
+
+.highlight.first-color {
+    color: #fff;
+    background: #84af9b;
+}
+
+.first-color {
+    color: #84af9b;
+}
+
+.highlight.second-color {
+    color: #fff;
+    background: #c9c8aa;
+}
+
+.second-color {
+    color: #c9c8aa;
+}
+
+.highlight.third-color {
+    color: #fff;
+    background: #ff847f;
+}
+
+.third-color {
+    color: #ff847f;
+}
+
+.highlight.fourth-color {
+    color: #fff;
+    background: #84af9b;
+}
+
+.fourth-color {
+    color: #84af9b;
+}
+
+.first-color {
+    color: #84af9b;
+}
+
+.second-color {
+    color: #c9c8aa;
+}
+
+.third-color {
+    color: #ff847f;
+}
+
+.dropcap, .dropcap-bg {
+    font-size: 3.8em;
+    line-height: 1;
+    padding-right: 0.1em;
+    float: left;
+    text-transform: uppercase;
+}
+
+.dropcap-bg {
+    padding: 0.03em 0.06em;
+    color: #7c807e;
+    margin-right: 0.15em;
+    background: #f1f1f1;
+}
+
+.dropcap, .dropcap-bg {
+    font-size: 3.8em;
+    line-height: 1;
+    padding-right: 0.1em;
+    float: left;
+    text-transform: uppercase;
+}
+
+.dropcap.first-color {
+    color: #84af9b;
+}
+
+.dropcap.second-color {
+    color: #c9c8aa;
+}
+
+.dropcap-bg.second-color {
+    background: #c9c8aa;
+    color: #fff;
+}
+
+.dropcap.third-color {
+    color: #ff847f;
+}
+
+.dropcap-bg.third-color {
+    background: #ff847f;
+    color: #fff;
+}
+
+.dropcap.fourth-color {
+    color: #84af9b;
+}
+
+.dropcap-bg.fourth-color {
+    background: #84af9b;
+    color: #fff;
+}
+
+.quote p {
+    margin-bottom: 13px;
+    padding: 9px 5px;
+}

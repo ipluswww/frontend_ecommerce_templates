@@ -1,0 +1,129 @@
+
+// ================================================
+// Config
+// ================================================
+
+@import "config/common";
+
+.coming-soon {
+    .content {
+        @include clearfix;
+        .wrapper {
+            h1 {
+                margin: 28px 0;
+            }
+            h2 {
+                color: $color10;
+            }
+            > div {
+                color: $color7;
+            }
+            .spliter {
+                color: $color8;
+                font-size: 130px;
+                font-weight: 1;
+            }
+            .unit {
+                color: $color11;
+                display: block;
+                font-family: $font-secondary;
+                font-size: 22px;
+                letter-spacing: 3.1px;
+                line-height: 22px;
+            }
+            .remain-time {
+                 > div {
+                    float: left;
+                    text-align: center;
+                    width: 14.28571428571429%;
+                }
+                h4 {
+                    margin-bottom: 0;
+                }
+                padding: 71px 112px;
+            }
+            .subtitle {
+                color: $color12;
+                margin-top: 30px;
+            }
+            .newsletter {
+                padding: 20px 0;
+                #newsletter_form {
+                    input {
+                        background-color: transparent;
+                        font-size: 14px;
+                        height: 42px;
+                        border: solid 1px $color9;
+                    }
+                    input[type='text'] {
+                        font-family: $font-primary;
+                        margin-right: -6px;
+                        padding: 0 20px;
+                        width: 258px;
+                    }
+                    input[type='submit'] {
+                        border-radius: 0;
+                        color: $color6;
+                        font-family: $font-secondary;
+                        width: 127px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1169px) {
+    .coming-soon {
+        .content .wrapper {
+            .remain-time {
+                padding: 60px 90px;
+            }
+            .unit {
+                font-size: 20px;
+            }
+            .spliter {
+                font-size: 100px;
+            }
+        }
+    }
+}
+@media (max-width: 992px) {
+    .coming-soon {
+        .content .wrapper {
+            .remain-time {
+                padding: 40px 65px;
+            }
+            .unit {
+                font-size: 17px;
+            }
+            .spliter {
+                font-size: 80px;
+            }
+        }
+    }
+}
+@media (max-width: 767px) {
+    .coming-soon {
+        .content .wrapper {
+            .remain-time {
+                padding: 20px 35px;
+            }
+            .unit {
+                font-size: 13px;
+            }
+            .spliter {
+                font-size: 50px;
+            }
+            .newsletter {
+                #newsletter_form {
+                    input[type='text'] {
+                        width: 178px;
+                    }
+                    input[type='submit'] {
+                        width: 80px;
+                    }
+                }
+            }
+        }
+    }
+}

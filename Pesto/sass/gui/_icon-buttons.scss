@@ -1,0 +1,41 @@
+.icon-button {
+    text-align: center;
+    border: solid 1px $color41;
+    display: block;
+    padding: 0;
+    &.large {
+        height: 45px;
+        line-height: 45px;
+        width: 45px;
+    }
+    &.larger {
+        height: 50px;
+        line-height: 50px;
+        width: 50px;
+    }
+	&.medium {
+		height: 40px;
+		line-height: 40px;
+		width: 40px;
+	}
+    &.small {
+        height: 35px;
+        line-height: 35px;
+        width: 35px;
+    }
+    &:hover {
+        background-color: $color42;
+        border-color: $color42;
+        color: white !important;
+    }
+	&.smaller {
+		height: 32px;
+		line-height: 32px;
+		width: 32px;
+	}
+	&.xsmall {
+		height: 27px;
+		line-height: 27px;
+		width: 27px;
+	}
+}   

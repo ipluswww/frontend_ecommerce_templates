@@ -1,0 +1,207 @@
+
+/*-----------------------------------------------------------------------------
+- SELECTS
+-----------------------------------------------------------------------------*/
+$checkbox-icon-color: #d1d1d1;
+$checkbox-icon-width: 14px;
+$checkbox-icon-height: 14px;
+$checkbox-text-color: #9e9e9e;
+
+$inputbox-border-color: $color20;
+$inputbox-icon-width: 25px;
+$inputbox-icon-height: 25px;
+$inputbox-icon-color: #939393;
+
+$inputbox-type1-border-color: $color26;
+$inputbox-type1-border-size: 2px;
+$inputbox-type1-icon-width: 21px;
+$inputbox-type1-icon-height: 21px;
+$inputbox-type1-icon-color: $color26;
+
+.inputbox-type1 {
+    display: inline-block;
+    height: $inputbox-type1-icon-height;
+    position: relative;
+    width: $inputbox-type1-icon-width;
+    color: $inputbox-type1-icon-color;
+    
+    input {
+        height: $inputbox-type1-icon-height;
+        left: 0;
+        margin: 0;
+        opacity: 0;
+        padding: 0;
+        position: absolute;
+        top: 0;
+        width: $inputbox-type1-icon-width;
+        z-index: 99; 
+        
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    
+	.input-skin	{
+		border: 2px solid $inputbox-type1-border-color;
+		font-size: 11px;
+        height: $inputbox-type1-icon-height;
+        left: 0;
+        position: absolute;
+        text-align: center;
+		top: 0;
+		width: $inputbox-type1-icon-width;
+        
+		i {
+			line-height: 17px;
+		}
+		
+        &.checked {
+            .visible-checked {
+                display: block !important;   
+            } 
+
+            .visible-unchecked {
+                display: none !important;
+            }
+        }
+    }
+
+    .visible-checked {
+        display: none;
+    }
+
+    .visible-unchecked {
+        display: block;   
+    }
+}
+
+.input-container {
+    display: inline-block;
+    height: $checkbox-icon-height;
+    position: relative;
+    width: $checkbox-icon-width;
+    color: $checkbox-icon-color;
+	margin-top: -3px;
+    
+    input {
+        height: $checkbox-icon-height;
+        left: 0;
+        margin: 0;
+        opacity: 0;
+        padding: 0;
+        position: absolute;
+        top: 0;
+        width: $checkbox-icon-width;
+        z-index: 99; 
+        
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    
+	.input-skin	{
+        height: $checkbox-icon-height;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: $checkbox-icon-width;
+        
+        &.checked {
+            .visible-checked {
+                display: block !important;   
+            } 
+
+            .visible-unchecked {
+                display: none !important;
+            }
+        }
+    }
+
+    .visible-checked {
+		color: $color63;
+        display: none;
+    }
+
+    .visible-unchecked {
+		color: $color20;
+        display: block;   
+    }
+}
+
+.inputbox-container {
+    display: inline-block;
+    height: $inputbox-icon-height;
+    position: relative;
+    width: $inputbox-icon-width;
+    color: $inputbox-icon-color;
+    
+    input {
+        height: $inputbox-icon-height;
+        left: 0;
+        margin: 0;
+        opacity: 0;
+        padding: 0;
+        position: absolute;
+        top: 0;
+        width: $inputbox-icon-width;
+        z-index: 99; 
+        
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    
+	.input-skin	{
+		border: 1px solid $inputbox-border-color;
+        height: $inputbox-icon-height;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: $inputbox-icon-width;
+        
+        &.checked {
+            .visible-checked {
+                display: block !important;   
+            } 
+
+            .visible-unchecked {
+                display: none !important;
+            }
+        }
+		
+		i {
+			width: 100%;
+			text-align: center;
+			line-height: 25px;
+			font-size: 12px;
+		}
+    }
+
+    .visible-checked {
+        display: none;
+    }
+
+    .visible-unchecked {
+        display: block;   
+    }
+}
+
+.input-text {
+    color: $checkbox-text-color;   
+    font-size: 14px; 
+    margin-left: 10px;
+}
+
+.inputbox-type1,
+.input-container,
+.inputbox-container {
+	& {
+		vertical-align: middle;
+	}
+	&+label {
+		margin: 0px 0px 0px 10px;
+		overflow: auto;
+		padding: 0px;
+		vertical-align: middle;
+	}
+}

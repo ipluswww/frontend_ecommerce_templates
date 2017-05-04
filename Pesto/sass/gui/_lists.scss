@@ -1,0 +1,154 @@
+/* ---------------------------------
+----------- List Groups --------  */
+
+ul {
+    padding: 0;
+	list-style: none;
+	
+}
+
+.select {
+    .size li  {
+        border: 1px solid $color41;
+        height: 32px;
+        line-height: 32px;
+        margin-right: 5px;
+        text-align: center;
+        width: 32px;
+        a {
+            color: $color66;
+            font: 12px $font-tertiary;
+        }
+    }
+    
+    .color li {
+        margin-right: 5px;
+        margin-left: 0;
+        padding: 0;
+        a {
+            display: block;
+            height: 32px;
+            text-decoration: none;
+            width: 32px;
+        }
+    }   
+}
+
+.list-float-left {
+	li {
+		display: block;
+		float: left;
+	}
+}
+
+.list-float-right {
+	li {
+		display: block;
+		float: right;
+	}
+}
+
+ul.share{
+    margin-left: 2px;
+    li {
+        border: 1px solid $color41;
+        height: 30px;
+        line-height: 30px;
+        margin-right: 7px;
+        text-align: center;
+        width: 30px;    
+    }
+} 
+
+
+.tag-cloud .tag-list {
+    li {
+        display: inline-block;
+        font-family: $font-primary;
+        font-size: 12px;
+        border: 1px solid #f1f1f1;
+        margin: 5px 0;
+        padding: 5px 15px
+    }
+}
+
+
+
+/* Predefined List style types */
+ul.list-style {
+	padding-left:20px;
+	list-style: initial;
+	
+}
+
+.list-style.list-disc {
+	list-style-type: disc;
+}
+
+.list-style.list-circle {
+	list-style-type: circle;
+}
+
+.list-style.list-square {
+	list-style-type: square;
+}
+
+.list-style.list-decimal {
+	list-style-type: decimal;
+}
+
+.list-style.list-lower-alpha {
+	list-style-type: lower-alpha;
+}
+
+.list-style.list-upper-alpha {
+	list-style-type: upper-alpha;
+}
+
+.list-style.list-lower-roman {
+	list-style-type: lower-roman;
+}
+
+.list-style.list-upper-roman {
+	list-style-type: upper-roman;
+}
+
+.fa-ul > li {
+	margin-bottom:10px;
+}
+
+.list-group {
+	margin-bottom: 20px;
+}
+
+.list-group-item {
+	padding: 10px 15px;
+}
+
+a.list-group-item {
+	color: #555555;
+}
+
+a.list-group-item .list-group-item-heading {
+	color: #444645;
+	margin-bottom:10px;
+}
+
+a.list-group-item:hover,
+a.list-group-item:focus {
+	background-color: #f2f2f2;
+}
+
+.list-group-item.active,
+.list-group-item.active:hover,
+.list-group-item.active:focus {
+	background-color: #84af9b;
+	border-color: #84af9b;
+}
+
+.list-group-item.active .list-group-item-text,
+.list-group-item.active:hover .list-group-item-text,
+.list-group-item.active:focus .list-group-item-text {
+  color: #fff;
+}
+

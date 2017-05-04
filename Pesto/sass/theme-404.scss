@@ -1,0 +1,82 @@
+
+// ================================================
+// Config
+// ================================================
+
+@import "config/common";
+
+// ================================================
+
+.page-404 {
+    .mark-404 {
+        margin: 0 auto;
+        padding: 80px 0 40px 0;
+        width: 50%;
+        img {
+            max-width: 100%;
+        }
+    }
+    .content-404 {
+        width: 50%;
+        
+        margin: 0 auto;
+        text-align: center;
+        span {
+            color: $color54;
+            font-family: 'verdana';
+            font-size: 23px;
+            letter-spacing: 1.2px;
+        }
+        h4 {
+            letter-spacing: 5px;
+            line-height: 51px;
+            margin: 24px 0;
+        }
+    }
+    .search {
+        margin: 0 auto 27px;
+        min-width: 270px;
+        padding: 13px 0;
+        width: 34.2%;
+    }
+    form {
+        .inner-button {
+            border: 1px solid $color55;
+            width: 100%;
+            input {
+                border: 0;
+                box-shadow: none;
+                color: $color56;
+                font: 14px $font-tertiary;
+                height: 48px;
+                padding-left: 20px;
+                @include calc(width, "100% - 57px");
+            }
+            button.btn-default {
+                border: 0;
+                font-size: 17px;
+                height: 48px;
+                width: 57px;
+                padding: 0;
+                &:not(:hover) {
+                    color: $color-normal;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .content-404 {
+        span {
+            font-size: 18px;
+        }
+    }
+}
+@media (max-width: 767px) {
+    .content-404 {
+        span {
+            font-size: 11px;
+        }
+    }
+}

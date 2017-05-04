@@ -1,0 +1,161 @@
+.content-header {
+    h2 {
+        color: $color-normal;
+        font-family: $font-secondary;
+        font-size: 20px;
+        letter-spacing: 1.8px;
+        margin: 10px 0;
+    }
+    .shopping-cart & {
+        margin-bottom: 0;
+    }
+    .breadcrumb {
+        background: transparent;
+        margin: 0;
+        li a{
+            color: #aaaaaa;
+            font-family: $font-primary;
+            font-size: 13px;
+        }
+        li {
+            color: #777777;
+            font-family: $font-primary;
+            font-size: 13px;
+        }
+    }
+    &.breadcrumb-header {
+        .wrapper {
+            @include clearfix;
+            border-bottom: 1px solid #f2f2f2;
+            border-top: 1px solid #f2f2f2;
+            padding-bottom: 15px;
+            padding-top: 15px;
+            position: relative;
+        }
+    }
+    
+    .page-title,
+    .breadcrumb {
+        display: inline-block;
+        padding: 0;
+    }
+    .pull-right {
+        line-height: 43px;
+    }
+    &.image-header {
+        .image {
+            img {
+                max-width: 100%;
+            }
+            .page-title {
+                @include calc(top,"50% - 62px");
+                left: 0;
+                position: absolute;
+                text-align: center;
+                width: 100%;
+                h1 {
+                    color: $color-header-top-hover;
+                    letter-spacing: 3.5px;
+                    margin-bottom: 13px;
+                }
+            }
+        }
+    }
+    .home2 & {
+        .rev-grid {
+            margin: -5px;
+            .grid-item {
+                padding: 5px;
+                position: relative;
+            }
+            .image-comment {
+                left: 0;
+                position: absolute;
+                text-align: center;
+                @include calc(top,"50% - 75px");
+                width: 100%;
+                a {
+                    margin-top: 18px;
+                    padding-left: 26px;
+                    padding-right: 26px;
+                }
+                h2 {
+                    color: $color30;
+                    letter-spacing: 0.6px;
+                    margin-top: 20px;
+                    margin-bottom: 8px;
+                }
+                span {
+                    color: $color29;
+                    font-size: 14px;
+                    font-weight: bold;
+                    letter-spacing: 1.4px;
+                }
+            }
+            .grid-width {
+                width: 50% !important;
+            }
+            .grid-width2 {
+                width: 100% !important;
+            }
+            .take-look .image-comment {
+                @include calc(top,"50% - 70px");
+                a {
+                    padding-left: 19px;
+                    padding-right: 19px;
+                }
+                h2 {
+                    letter-spacing: 2px;
+                }
+            }
+            #rev_slider_wrapper2 {
+                position: relative;
+                width: 100% !important;
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .content-header {
+        .home2 & {
+            .rev-grid {
+                .grid-width {
+                    width: 25% !important;
+                } 
+                .grid-width2 {
+                    width: 50% !important;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 991px) {
+    .home2 .content-header .rev-grid .image-comment {
+        @include calc(top,"50% - 68px");
+    }
+}
+@media (max-width: 767px) {
+    .content-header {
+        .home2 & {
+            .rev-grid {
+                margin: -10px;
+                .grid-item {
+                    padding: 10px;
+                }
+                .grid-width2,
+                .grid-width {
+                    width: 100% !important;
+                }
+                .take-look .image-comment {
+                    @include calc(top,"50% - 27px");
+                    h2 {
+                        font-size: 20px !important;
+                        letter-spacing: 0.9px;
+                        margin-top: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

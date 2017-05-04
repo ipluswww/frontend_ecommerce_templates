@@ -1,0 +1,94 @@
+/*
+Checkbox
+*/
+
+.ed-checkbox {
+    position: relative;
+
+    & > span.inc {
+
+        animation: 0.3s ease 0s normal none 1 running growCircle;
+
+    }
+
+    & > .check {
+        -moz-border-top-colors: none;
+        -moz-border-right-colors: none;
+        -moz-border-bottom-colors: none;
+        -moz-border-left-colors: none;
+        border-width: medium 2px 2px medium;
+        border-style: none solid solid none;
+        border-color: -moz-use-text-color #D0D7DE #D0D7DE -moz-use-text-color;
+
+        border-image: none;
+        left: 6px;
+        height: 20px;
+        width: 10px;
+        opacity: 0;
+        top: -2px;
+        transform: rotate(180deg);
+        transition-delay: 0.3s;
+        z-index: 5;
+    }
+	    
+    input[type="checkbox"] {
+        visibility: hidden;
+        position: absolute;
+    }
+
+    label {
+        cursor: pointer;
+        padding-left: 30px;
+    }
+
+    label > .box {
+        top: 4px;
+        height: 15px;
+        width: 15px;
+        border: 2px solid #D0D7DE;
+        z-index: 5;
+        transition-delay: 0.2s;
+    }
+
+    label > .check {
+        top: 2px;
+        left: 4px;
+        width: 8px;
+        height: 15px;
+    }
+
+    label > .inc {
+
+        left: -12px;
+        top: -8px;
+
+    }
+
+    label > span {
+
+        display: block;
+        position: absolute;
+        left: 0px;
+        transition-duration: 0.3s;
+
+    }
+
+    label > span.inc {
+
+        background: #FFF none repeat scroll 0% 0%;
+        left: -10px;
+        top: -10px;
+        height: 40px;
+        width: 40px;
+        opacity: 0;
+        border-radius: 50% !important;
+
+    }
+       
+    label > span {
+        display: block;
+        position: absolute;
+        left: 0px;
+        transition-duration: 0.3s;
+    } 
+}

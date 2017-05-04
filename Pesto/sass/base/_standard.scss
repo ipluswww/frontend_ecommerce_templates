@@ -1,0 +1,19 @@
+
+body {
+    font-family: $font-primary;
+    font-size: 15px;
+    margin: 0;
+    overflow-x: hidden;
+    position: relative;
+    a {
+        outline: none !important;
+    }
+}
+
+.coming-soon {
+	background-image: url("../img/coming_soon/comingsoon_background.jpg");
+	background-repeat: no-repeat;
+	height: 100%;
+	padding: 280px 0;
+	position: relative;
+}

@@ -1,0 +1,73 @@
+#contactForm,#reviewForm {
+    .row {
+        input:not([type='submit']),
+        ,textarea,
+        .form-control {
+            border-radius: 0px;
+            border-color: $color57;
+            box-shadow: none;
+            border-width: 1px;
+        }
+    }
+}
+
+#reviewForm .row {
+	input {
+		height: 40px;
+	}
+}
+
+.contactus.type1 {
+    #contactForm {
+        input[type="text"] {
+            height: 50px;
+        }
+		
+        textarea {
+            height: 200px;
+        }
+		
+        input[type="submit"] {
+            width: 167px;
+            height: 43px;
+        }
+    }
+}
+
+.contactus.type3 {
+    #contackForm {
+        height:230px;
+    }
+}
+
+.cart {
+    padding-top: 23px;
+	
+    .add-cart {
+        border: 1px solid $color6;
+        color: $color6;
+        font-size: 13.01px;
+        font-weight: bold;
+        padding: 7px 24px;
+        display: block;
+    }
+	
+    .qty {
+        border-radius: 0px;
+        border: 1px solid $color41;
+        display: block;
+        height: 35px;
+        line-height: 35px;
+        text-align: center;
+        width: 35px;
+    }
+    
+    a.add-wish,a.add-compare {
+        i {
+            line-height: 28px;
+        }
+        @extend .qty;
+    }
+
+}
+

@@ -1,0 +1,397 @@
+/*
+- BUTTONS
+-----------------------------------------------------------------------------*/
+.btn-transparent {
+    background-color: transparent;   
+}
+
+.btn-borders {
+    border: 1px solid #000; 
+}
+
+.btn,
+.btn-style-default {
+	border: 1px solid $color6;
+	border-radius: 0px;
+	color: $color6;
+	
+	&:active,
+	&:hover,
+	&:focus {
+		color: #fff;
+		background-color: $color-links-hover;
+		border-color: $color-links-hover;
+	}
+	
+	&:hover:focus {
+		background-color: lighten($color-links-hover, 5%);
+		border-color: $color-links-hover !important;
+		color: #fff;
+	}
+}
+.btn-info,
+.btn-success,
+.btn-danger,
+.btn-warning {
+	font-family: $font-secondary;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 10.5px 29px;
+}
+
+.btn-success {
+	&:hover,&:focus,&:active {
+		background-color: #5cfb5c;
+		border-color: #5cfb5c;
+	}
+}
+
+.btn-info {
+	&:hover,&:focus,&:active {
+		background-color: #77cfff;
+		border-color: #77cfff;
+	}
+}
+
+.btn-warning {
+	&:hover,&:focus,&:active {
+		background-color: #ffad4e;
+		border-color: #ffad4e;
+	}
+}
+
+.btn-danger {
+	&:hover,&:focus,&:active {
+		background-color: #f9534f;
+		border-color: #f9534f;
+	}
+}
+
+//button sizes
+.btn-small {
+    padding: 7.5px 14.5px !important;
+}
+//color
+.color-black {
+    color: #000;
+}
+
+//Paginations
+
+.pagination-container {
+    .title {
+        letter-spacing: -0.1px;
+        line-height: 34px;
+        span {
+			display: block;
+			line-height: 34px !important;
+            color: $pagination_item_color;
+            font: 14px $font-primary;
+        }
+    }
+}
+.pagination {
+    margin: 0 -5px 0 0;
+    .prev
+    ,.next {
+        >a {
+            border-radius: 0 !important;
+        }
+    }
+    >li:first-child>a { 
+        border-radius: 0 ;
+    }
+    li {
+        display: block;
+        float: left;
+        margin: 0;
+        > a {
+            border-color: $pagination_item_border_color;
+            color: $pagination_item_color;  
+            display: block;
+            text-align: center;
+        }
+	}
+    .active a,
+    .active a:focus,
+    .active a:hover,
+	li > a:focus,
+    li > a:hover {
+        color: $pagination_active_item_color;
+        background-color: transparent;
+        border-color: $pagination_active_item_border_color;
+    }
+}
+.no-number {
+    width: 100%;
+    .prev-project
+    ,.next-project {
+        display: block;
+        float: left;
+        a {
+            border: solid 1px $color38;
+            color: $color-light;
+            display: block;
+            font-size: 11px;
+            height: 28px;
+            line-height: 28px;
+            text-align: center;
+            width: 35px;
+        }
+    }
+    .next-project a {
+        border-left: none;
+    }
+}
+.pagination-normal {
+    height: 34px;
+	li,
+    li a {
+		height: 34px;
+		width: 34px;
+	}
+	li {
+		margin-right: 5px;
+	}
+}
+
+.pagination-image {
+    .prev-project
+    ,.next-project {
+        padding: 0 15px;
+        position: relative;
+        width: 33.33333333333333%;
+        &:hover {
+            background-color: white;
+            opacity: 0.7;
+            .image-comment {
+                display: block;
+            }
+        }
+    }
+    .image {
+        img {
+            max-width: 100%;
+        }
+    }
+    .image-comment {
+        @include calc(top,"50% - 10px");
+        display: none;
+        left: 0;
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        a {
+            color: $color-header-top-hover;
+            font: 19px $font-secondary;
+            text-decoration: none;
+            span i:before {
+                font-size: 12px;
+                line-height: 23px !important;
+                vertical-align: top !important;
+            }
+        }
+    }
+    .prev-project {
+        float: left;
+    }
+    .next-project {
+        float: right;
+    }
+}
+
+//Pagination Responsive
+@media (max-width: 479px) {
+	.pagination-container {
+		.title {
+			float: none !important;
+		}
+		ul.pull-right {
+			float: none !important;
+		}
+	}
+}
+.btn-thin-border {
+    border: 1px solid $color6;
+}
+
+.btn-normal-border {
+    border: 2px solid $color6;
+}
+
+.btn-xlg {
+    padding: 15px 30px;
+}
+
+.btn-xl {
+    padding: 15px 25px;
+}
+
+.btn-lg {
+    padding: 11px 20px;
+}
+
+.btn-md {
+    font-size: 13px;
+    line-height: 1;
+    padding: 10px 15px;
+}
+
+.btn-sm {
+    padding: 7.5px 14.5px;
+}
+
+.btn-xs {
+    font-size: 12px !important;
+    padding: 8px 15px !important;
+}
+
+//========== special buttons ===============
+.btn-custom {
+    color: #ffffff;
+    background-color: #84af9b;
+    border-color: transparent;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+
+.btn-custom:hover,
+.btn-custom:focus,
+.btn-custom:active,
+.btn-custom.active,
+.open .dropdown-toggle.btn-custom {
+    color: #fff;
+    background-color: #c9c8aa;
+    border-color: transparent;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+
+.btn-custom-2 {
+    color: #fff !important;
+    background-color: #444645;
+    border-color: #444645;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4);
+    text-transform: uppercase;
+}
+
+.btn-custom-2:hover,
+.btn-custom-2:focus,
+.btn-custom-2:active,
+.btn-custom-2.active,
+.open .dropdown-toggle.btn-custom-2 {
+    color: #fff !important;
+    background-color: #84af9b;
+    border-color: #84af9b;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+
+.btn-custom-3 {
+    color: #fff;
+    background-color: #575a59;
+    border-color: #5c5f5e;
+    -webkit-box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.4);
+    box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.4);
+}
+
+.btn-custom-3:hover,
+.btn-custom-3:focus,
+.btn-custom-3:active,
+.btn-custom-3.active,
+.open .dropdown-toggle.btn-custom-3 {
+    color: #fff;
+    background-color: #84af9b;
+    border-color: #84af9b;
+    -webkit-box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.4);
+    box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.4);
+}
+
+.btn-info {
+    color: #fff;
+    background-color: #5bc0de;
+    border-color: #46b8da;
+}
+
+.btn-info:hover,
+.btn-info:focus,
+.btn-info:active,
+.btn-info.active,
+.open>.dropdown-toggle.btn-info {
+    color: #fff;
+    background-color: #31b0d5;
+    border-color: #269abc;
+}
+
+.btn-warning {
+    color: #fff;
+    background-color: #f0ad4e;
+    border-color: #eea236;
+}
+.btn-warning:hover, .btn-warning:focus, .btn-warning:active, .btn-warning.active, .open>.dropdown-toggle.btn-warning {
+    color: #fff;
+    background-color: #ec971f;
+    border-color: #d58512;
+}
+
+.btn-danger {
+    color: #fff;
+    background-color: #d9534f;
+    border-color: #d43f3a;
+}
+
+.btn-danger:hover,
+.btn-danger:focus,
+.btn-danger:active,
+.btn-danger.active,
+.open>.dropdown-toggle.btn-danger {
+    color: #fff;
+    background-color: #c9302c;
+    border-color: #ac2925;
+}
+
+.btn-success {
+    color: #fff;
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+}
+.btn-success:hover, .btn-success:focus, .btn-success:active, .btn-success.active, .open>.dropdown-toggle.btn-success {
+    color: #fff;
+    background-color: #449d44;
+    border-color: #398439;
+}
+
+@each $state in $btn-states {
+	.btn-#{nth($state,1)} {
+		background: transparent;
+		border: 1px solid #{nth($state,2)};
+		color: #{nth($state,2)};
+		font-family: $font-secondary;
+		font-size: 14px;
+		font-weight: bold;
+		letter-spacing: 1px;
+		padding: 10.5px 29px;
+		text-shadow: none;
+		
+		&:active,
+		&:hover,
+		&:focus {
+			color: #{nth($state,3)};
+			background-color: $color-links-hover;
+			border-color: $color-links-hover;
+		}
+		
+		&:hover:focus {
+			background-color: lighten($color-links-hover, 5%);
+			border-color: $color-links-hover !important;
+			color: #{nth($state,3)};
+		}
+	}
+}
+
+.btn-default {
+	&.narrow {
+		padding: 10.5px 17px;
+	}
+}

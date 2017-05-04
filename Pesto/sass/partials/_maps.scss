@@ -1,0 +1,24 @@
+.left-map {
+    height: 700px;
+    width: 100%;    
+}
+
+.top-map {
+    height: 500px;
+    width: 100%;    
+}
+
+.bottom-map {
+    height: 300px;
+    width: 100%;    
+}
+#google_map {
+    div.gmnoprint,
+    div.gmnoscreen,
+    div.gm-style-cc {
+        display: none;      
+    }
+    img[src="http://maps.gstatic.com/mapfiles/api-3/images/google_white2.png"], a[href^="https://maps.google.com"]{
+        display:none !important;
+    }                    
+}

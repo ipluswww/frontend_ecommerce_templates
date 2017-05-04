@@ -1,0 +1,141 @@
+// =============================================================================
+// TYPOGRAPHY
+// =============================================================================
+$font-primary: 'Istok Web';
+$font-secondary: 'Roboto Condensed';
+$font-tertiary  : 'Verdana';
+
+
+// WEIGHTS
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+
+/*COLORS*/
+
+// header-top-links
+$color-header-top: #858585;
+$color-header-top-hover: #555555;
+$color-header-top-border: #f2f2f2;
+                                        
+$color-normal: #888888;
+$color-dark: #777777;
+$color-light: #999999;
+
+$color-input-border: #f4f4f4;
+$color-input: #c1c1c1;
+
+$color-links-hover: #66ccff;
+$color-facebook-bg: #3f83c3;
+$color-twitter-bg: #27c0c8;
+$color-pinterest-bg: #de2f2f;
+$color-instagram-bg: #937f65;
+$color-skype-bg: #42b2d2;
+$color-envelope-bg: #8f6540;
+$color-google-bg: #fd3f3f;
+
+$color1: #959595;
+$color2: #f8f8f8;
+$color3: #acacac;
+$color4: #b6b6b6;
+$color5: #c1c0c0;
+$color6: #444645;
+$color7: #a6a6a6;
+$color8: #dadcdd;
+$color9: #a5a5a5;
+$color10: #535252;
+$color11: #6a6a6a;
+$color12: #555555;
+$color14: #cbcbcb;
+$color15: #d6d6d6;
+$color16: #919191;
+$color17: #6e6e6e;
+$color18: #adadad;
+$color19: #b8b8b8;
+$color20: #efefef;
+$color21: #8d8c8c;
+$color22: #686868;
+$color23: #cccccc;
+$color24: #c6c6c6;
+$color25: #f2f2f2;
+$color26: #bdbdbd;
+$color27: #6d6d6d;
+$color28: #666666;
+$color29: #535353;
+$color30: #444444;
+$color31: #a8a8a8;
+$color32: #dfdfdf;
+$color33: #a6a5a5;
+$color34: #ffd25e;
+$color35: #91dbff;
+$color36: #6a645a;
+$color37: #8f8c83;
+$color38: #d5d5d5;
+$color39: #dddddd;
+$color40: #f9f9f9;
+$color41: #e0e0e0;
+$color42: #91dbff;
+$color43: #55524e;
+$color44: #a0a0a0;
+$color45: #c2bfbf;
+$color46: #848484;
+$color47: #fbfbfb;
+$color48: #f3f3f3;
+$color49: #adacac;
+$color50: #9d9b9b;
+$color51: #4a4a4a;
+$color52: #a7a7a7;
+$color53: #a7a7a7;
+$color54: #8f8f8f;
+$color55: #e5e5e5;
+$color56: #b9b9b9;
+$color57: #f3f3f3;
+$color58: #ababab;
+$color59: #cecece;
+$color60: #bfbfbf;
+$color61: #bfbfbf;
+$color62: #8b8a8a;
+$color63: #d2d1d1;
+$color64: #e2e2e2;
+$color65: #717171;
+$color66: #b4b4b4;
+$color67: #cdcdcd;
+$color68: #9f9f9f;
+$color69: #cfcfcf;
+$color70: #f6f6f6;
+$color71: #b3aa99;
+$color72: #848383;
+
+// spacement
+$spacement-increment: 5px;
+$spacement-xs: $spacement-increment;
+$spacement-sm: $spacement-xs + $spacement-increment;
+$spacement-md: $spacement-sm + $spacement-increment;
+$spacement-lg: $spacement-md + $spacement-increment;
+$spacement-xl: $spacement-lg + $spacement-increment;
+$spacement-xlg: $spacement-xl + $spacement-increment;
+
+// borders
+$border-thin: 1px;
+$border-normal: 2px;
+$border-thick: 3px;
+
+// buttons
+$btn-color-default: $color6;
+$btn-color-default-inverse: #FFF;
+
+$btn-color-primary: $color6;
+$btn-color-primary-inverse: #FFF;
+
+// states list
+$btn-states: (default $btn-color-default $btn-color-default-inverse) (primary $btn-color-primary $btn-color-primary-inverse);
+
+// pagination
+$pagination_item_color: #b2b2b2;
+$pagination_active_item_color: #8a8a8a;
+$pagination_item_border_color: #ebebeb;
+$pagination_active_item_border_color: #cacaca;
+
+//
+$caret-size: 19px;

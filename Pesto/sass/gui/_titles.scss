@@ -1,0 +1,75 @@
+@media (min-width: 1200px) {
+	.title {
+		font-size: 42px;
+	}
+}
+
+.title-bg .title {
+    padding-left: 8px;
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.title-desc {
+    font: 17px/1.5 "PT Sans", Arial, sans-serif;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.reverse .title {
+    padding-left: 0;
+    padding-right: 8px;
+    text-align: right;
+}
+.reverse .title-bg {
+    text-align: right;
+}
+.reverse .title-desc {
+    text-align: right;
+}
+.title-bg .title {
+    margin: 7.5px 0;
+}
+
+.title-bg > h1, .title-bg > h2, .title-bg > h3, .title-bg > h4, .title-bg > h5 {
+    position: relative;
+    display: inline-block;
+    left: 0;
+    padding-right: 30px;
+    z-index: 1;
+    background: #fff;
+}
+
+.title-bg, .title-bg-double {
+    position: relative;
+}
+
+.title-bg:after {
+    content: '';
+    background: #dcdcdc;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -0.5px;
+    display: block;
+    width: 100%;
+    height: 1px;
+    z-index: 0;
+}
+
+.reverse .title-bg > h1, .reverse .title-bg > h2, .reverse .title-bg > h3, .reverse .title-bg > h4, .reverse .title-bg > h5 {
+    padding-left: 30px;
+}
+
+.sub-title {
+    font-size: 25px;
+    line-height: 1;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    margin-top: 0;
+}
+
+.sub-title.reverse {
+    text-align: right;
+}

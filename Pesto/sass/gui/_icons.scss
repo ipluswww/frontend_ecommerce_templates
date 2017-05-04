@@ -1,0 +1,45 @@
+/* Icons */
+
+//Rotations
+$repeat_count: 8;
+@for $i from 1 to $repeat_count  {
+	.theme-icon-rotate-#{$i * 45} {
+		&:before {
+			@include icon-rotate(#{$i * 45}deg);
+		}
+	}
+}
+
+.theme-icon {
+	line-height: 1;
+	
+	&:before {
+		margin-left: 0;
+		margin-right: 0;
+		width: auto;
+		font-size: inherit;
+	}
+}
+
+.fontawesome-icon-list a,
+.bs-glyphicons-list li {
+	color: #5a5a5a;
+	display: block;
+	padding: 0.3em 0.6em;
+}
+.fontawesome-icon-list a .fa,
+.bs-glyphicons-list li .glyphicon {
+	margin-right: 0.5em;
+	width: 1.5em;
+}
+
+.fontawesome-icon-list a, .bs-glyphicons-list li {
+	color: #5a5a5a;
+	display: block;
+	padding: 0.3em 0.6em;
+}
+
+//FIX CENTER Theme Icons
+.pesto-icon-loving:before {
+    margin-left: 0;
+} 
