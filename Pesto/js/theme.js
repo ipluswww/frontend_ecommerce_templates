@@ -579,9 +579,22 @@ $(document).ready(function() {
     setEvent();
     setSelect();
     setSlider();
+	
+	$('#form_personal_details .btn-continue').on('click', function(event) {
+		var password_string = $('#password').val();
+		var confirmation_password_string = $('#confirm_password').val();
+		
+		if (confirmation_password_string == password_string) {
+			return;
+		}
+		
+		alert('Please Enter same password on Confirmation Field!!!');
+		
+		event.preventDefault();
+	});
 
     //Calcualte height of left-sidebar header when left-sidebar header is clicked
-    $('.left-sidebar .header-body.fixed-bottom *').on('click',function(){
+    $('.left-sidebar .header-body.fixed-bottom *').on('click', function() {
 		
 		'use strict';
 		
@@ -639,6 +652,7 @@ $(document).ready(function() {
                 menuFixed($('.header-body'),'add');
             }
         }
+		
         $(window).scroll(function() {
 			
 			'use strict';
@@ -767,6 +781,7 @@ $(document).ready(function() {
                         setTimeout(refreshHeader3(),400);
                     }
                 });
+				
                 $(this).find('>.dropdown-menu').toggleClass('droped');
                 $(this).find('.dropdown-menu .dropdown-menu.droped').removeClass('droped');
                 $(this).find('>.dropdown-table-sub-nav.droped').removeClass('droped').slideUp('slow');
@@ -934,6 +949,7 @@ $(document).ready(function() {
             var sortValue = $(this).attr('data-sort-value');
             $(this).parent().siblings('.active').removeClass('active');
             $(this).parent().addClass('active');
+			
             if (sortContainer.substr(1,1) == "." || sortContainer.substr(1,1) == "#") {
                 sortContainer = sortContainer.substr(1);
             }
