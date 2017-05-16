@@ -520,13 +520,13 @@ function setSlider()
                 max: 1000,
                 values: [ $start_value, $end_value ],
                 slide: function( event, ui ) {
-                    $( ".amount-start", $(this).parent(), $(this).parent() ).val('$'+ui.values[ 0 ]);
-                    $( ".amount-end", $(this).parent() ).val('$'+ui.values[ 1 ]);
+                    $( ".amount-start", $(this).parent()).val('$'+ui.values[ 0 ]);
+                    $( ".amount-end", $(this).parent()).val('$'+ui.values[ 1 ]);
                 }
             });
 
             $(".amount-start", $(this).parent()).val('$'+$(this).slider( "values", 0 ));
-            $( ".amount-end", $(this).parent()).val('$'+$(this).slider( "values", 1 ));	
+            $(".amount-end", $(this).parent()).val('$'+$(this).slider( "values", 1 ));	
         });
 
         $('.slider-default').each(function(){
