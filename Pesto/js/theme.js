@@ -10,6 +10,10 @@ function formationOfDate(e) {
 
 /* snazzy map */
 function initializeMap() {
+	if (typeof google == 'undefined') {
+		setTimeout(initializeMap, 200);
+		return;
+	}
 	
 	'use strict';
 	
